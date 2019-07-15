@@ -1,5 +1,7 @@
 package com.zcr.create.singleton;
 
+import java.io.Serializable;
+
 /**
  * @author zcr
  * @date 2019/7/12-10:12
@@ -8,7 +10,7 @@ package com.zcr.create.singleton;
  * 延时加载：真正用的时候才去加载
  *
  */
-public class SingletonLazy {
+public class SingletonLazy implements Serializable {
 
     //1.私有化静态属性（只是声明，而不去初始化对象）
     private static SingletonLazy instance;
